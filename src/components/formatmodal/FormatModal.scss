@@ -1,0 +1,118 @@
+.format-option {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+  &:hover {
+      background-color: #f0f0f0;
+  }
+}
+
+.format--round-frame-center img {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.format--two-side-by-side-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.format--four-center-200px {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px; /* Tarpas tarp nuotraukų */
+  justify-content: center;
+  
+}
+
+.format--single-with-border img {
+  border: 20px solid #000;
+}
+
+.format--two-400x200-center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px; /* Tarpas tarp nuotraukų */
+  justify-content: center;
+}
+
+.format--four-center-some-round {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+}
+
+.format--three-mixed-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+
+.format--three-special-center .gallery__center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-content: center;
+  width: 200px;
+}
+
+.format--three-special-center .gallery__photo:first-child .gallery__image {
+  width: 250px;
+  height: 400px;
+  
+}
+
+.format--three-special-center .gallery__photo:nth-child(2) .gallery__image,
+.format--three-special-center .gallery__photo:nth-child(3) .gallery__image {
+  width: 150px;
+  height: 200px;
+  display: block;
+}
+.format--three-special-center .gallery__photo:nth-child(3) {
+  position: relative;
+  top: -205px; /* Pakelti trečia nuotrauka į pirmos lygį */
+  left: 205px;
+}
+
+
+
+
+.format--round-frame-center img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Užtikrina nuotraukos proporcijų išlaikymą */
+}
+
+.format--two-side-by-side-center img {
+  width: 200px;
+  height: 200px;
+}
+
+.format--four-center-200px img {
+  width: 200px;
+  height: 200px;
+}
+
+.format--single-with-border img {
+  width: 200px;
+  height: 200px;
+}
+
+.format--two-400x200-center img {
+  width: 400px;
+  height: 200px;
+}
+
+.format--four-center-some-round img {
+  width: 200px;
+  height: 200px;
+}

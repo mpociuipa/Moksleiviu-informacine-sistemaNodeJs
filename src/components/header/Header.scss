@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+  
+    &__title {
+      margin: 0;
+    }
+  
+    &__menu {
+      display: flex;
+      align-items: center;
+  
+      &__user {
+        margin-right: 20px;
+      }
+  
+      &__signout {
+        cursor: pointer;
+      }
+    }
+  }
+  

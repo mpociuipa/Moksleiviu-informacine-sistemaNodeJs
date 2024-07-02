@@ -1,0 +1,41 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px; /* Tarpas tarp visų galerijos elementų */
+}
+
+
+
+.gallery__other {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Tarpas tarp kitų nuotraukų */
+}
+
+.gallery__photo {
+  position: relative;
+  margin: 0 auto;
+}
+
+.gallery__image {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery__delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.full-size-image {
+  width: 100%;
+  height: auto;
+}
+
+
