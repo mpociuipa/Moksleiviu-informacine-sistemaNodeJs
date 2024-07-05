@@ -136,4 +136,77 @@
   top: -205px; /* Pakelti trečia nuotrauka į pirmos lygį */
   left: 205px;
 }
+@media (max-width: 768px) {
+  .gallery .format--round-frame-center img,
+  .gallery .format--two-side-by-side-center,
+  .gallery .format--four-center-200px,
+  .gallery .format--two-400x200-center,
+  .gallery .format--four-center-some-round,
+  .gallery .format--three-mixed-center,
+  .format--three-special-center .gallery__center {
+    grid-template-columns: 1fr;
+    width: 600px;
+    height: 600px;
+  }
+  .format--three-special-center .gallery__photo:nth-child(3) {
+    top: 0;
+    left: 0;
+  }
+  /* Adjust the single image with border for tablets */
+  .format--single-with-border img {
+    width: 100%;
+    height: auto;
+    border-width: 50px;
+  }
+}
+/* Mobile devices */
+@media (max-width: 425px) {
+  .gallery .format--round-frame-center img,
+  .gallery .format--two-side-by-side-center img,
+  .gallery .format--four-center-200px img,
+  .gallery .format--two-400x200-center img,
+  .gallery .format--four-center-some-round img,
+  .gallery .format--three-mixed-center img,
+  .format--three-special-center .gallery__center img{
+    gap: 5px;
+    width: 400px;
+    height: 400px;
+    border-width: 1px;
+  }
+  .format--three-special-center .gallery__photo:nth-child(3) {
+    top: 0;
+    left: 0;
+  }
+  /* Further adjust the single image with border for small screens */
+  .format--single-with-border img {
+    width: 200px;
+    height: auto;
+    border-width: 25px;
+  }
+}
 
+/* Mobile devices */
+@media (max-width: 320px) {
+  .gallery .format--round-frame-center img,
+  .gallery .format--two-side-by-side-center img,
+  .gallery .format--four-center-200px img,
+  .gallery .format--two-400x200-center img,
+  .gallery .format--four-center-some-round img,
+  .gallery .format--three-mixed-center img,
+  .format--three-special-center .gallery__center img{
+    gap: 5px;
+    width: 200px;
+    height: 200px;
+    border-width: 1px;
+  }
+  .format--three-special-center .gallery__photo:nth-child(3) {
+    top: 0;
+    left: 0;
+  }
+  /* Further adjust the single image with border for small screens */
+  .format--single-with-border img {
+    width: 200px;
+    height: auto;
+    border-width: 25px;
+  }
+}
